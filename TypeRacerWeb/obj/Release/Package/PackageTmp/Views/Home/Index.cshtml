@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <h1>Typeracer</h1>
+    <p>Choose random texts and try to type them as fast as you can.</p>
+</div>
+<div>
+    @Html.ActionLink("Start Random Race", "Race", "Home", null, new { @class = "btn btn-primary btn-lg" })
+</div>

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "UploadTrack";
+}
+
+<h2>UploadTrack</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div class="container">                   
+        @Html.TextArea("text", new {id="sampletextarea" })
+    </div>      
+    <hr />
+    <div>
+        <input type="submit" value="Upload" class="btn btn-success" />        
+    </div>
+}
+
+<script src="~/Scripts/typewriter.js?v=1"></script>

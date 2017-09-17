@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TypeRacerDomain.DBs.UserRace>
+@{
+    ViewBag.Title = "HighScores";
+}
+
+<h2>HighScores</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-left">No.</th>
+            <th class="text-center">UserName</th>
+            <th class="text-center">Speed</th>
+            <th class="text-center">Date</th>
+            <th class="text-center">Track</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 1; }
+        @foreach (var line in Model)
+        {
+            <tr>
+                <td class="text-left">@i</td>
+                <td class="text-center">
+                    @line.UserName
+                </td>
+                <td class="text-center">
+                    @line.Speed
+                </td>
+                <td class="text-center">
+                    @line.RaceDate
+                </td>
+                <td class="text-center">
+                    @line.Track.Text
+                </td>
+            </tr>
+            i++;
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Random Race", "Race", "Home", null, new { @class = "btn btn-lg btn-primary" })
+</div>

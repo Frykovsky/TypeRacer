@@ -1,0 +1,14 @@
+c:\users\mm\documents\visual studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\TypeRacerDomain.dll
+c:\users\mm\documents\visual studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\TypeRacerDomain.pdb
+c:\users\mm\documents\visual studio 2017\Projects\TypeRacer\TypeRacerDomain\obj\Debug\TypeRacerDomain.csprojResolveAssemblyReference.cache
+c:\users\mm\documents\visual studio 2017\Projects\TypeRacer\TypeRacerDomain\obj\Debug\TypeRacerDomain.dll
+c:\users\mm\documents\visual studio 2017\Projects\TypeRacer\TypeRacerDomain\obj\Debug\TypeRacerDomain.pdb
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\TypeRacerDomain.dll.config
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\EntityFramework.dll
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\EntityFramework.xml
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\obj\Debug\TypeRacerDomain.Migrations.InitialCreate.resources
+C:\Users\mm\Documents\Visual Studio 2017\Projects\TypeRacer\TypeRacerDomain\obj\Debug\TypeRacerDomain.csproj.GenerateResource.Cache

@@ -1,0 +1,32 @@
+﻿@model TypeRacerDomain.DBs.Track
+@{
+    ViewBag.Title = "Race";
+}
+<div class="container">
+    <div class="col-sm-8 ">
+        <div class="well">
+            <button class="btn btn-primary" id="timer">Start the timer</button>
+            <h2 class="btn-group-justified" id=countdown></h2>
+        </div>
+        <div class="well" id=sampletextarea>@Model.Text</div>
+        <div class="well">
+            <label id=typinglabel>Type here:</label>
+            <input type="text" id="typingblank" disabled>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        @Html.ActionLink("View High Scores For This Track", "HighScores", new { track = Model.TrackID }, new { @class = "btn btn-primary" })
+    </div>
+    <div id="RaceAgain" class="col-sm-4" style="display:none">
+        @Html.ActionLink("Start Another Race", "Race", "Home", null, new { @class = "btn btn-primary" })
+    </div>
+</div>
+
+@using (Html.BeginForm("SaveRace", "User", FormMethod.Post, new { id = "RaceSaviour" }))
+{
+    @Html.Hidden("trackId", Model.TrackID, new { @class = "track" });
+    @Html.Hidden("speed", null, new { @class = "speed" });
+    @Html.Hidden("mistakes", null, new { @class = "mistakes" });
+}
+
+<script src="~/Scripts/typewriter.js?v=1"></script>
