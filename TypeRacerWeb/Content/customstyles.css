@@ -1,0 +1,19 @@
+﻿#sampletextarea {
+    border: 1px solid grey;
+    font: medium;
+    height: 200px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 710px;
+}
+
+.error {
+    background-color: red;
+}
+
+span {
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: green;
+}

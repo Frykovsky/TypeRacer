@@ -1,0 +1,53 @@
+﻿@model IEnumerable<TypeRacerDomain.DBs.Track>
+@{
+    ViewBag.Title = "ViewTracks";
+}
+
+<h2>ViewTracks</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="text-left">No.</th>
+            <th class="text-center">Uploader</th>
+            <th class="text-center">Date</th>
+            <th class="text-center">Track</th>
+            @if (User.IsInRole("admin"))
+            {
+                <th class="text-center">DeleteTrack</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @{int i = 1; }
+        @foreach (var line in Model)
+        {
+            <tr>
+                <td class="text-left">@i</td>
+                <td class="text-center">
+                    @line.Uploader
+                </td>
+                <td class="text-center">
+                    @line.UploadDate
+                </td>
+                <td class="text-center">
+                    @line.Text
+                </td>
+                @if (User.IsInRole("admin"))
+                {
+                    <td class="text-center">
+                        @using (Html.BeginForm("DeleteTracks", "User", FormMethod.Post))
+                    {
+                            @Html.Hidden("trackId", line.TrackID)
+                            <input type="submit" class="btn btn-danger" value="Delete" />
+                        }
+                    </td>
+                }
+            </tr>
+            i++;
+        }
+    </tbody>
+</table>
+<div>
+    @Html.ActionLink("Random Race", "Race", "Home", null, new { @class = "btn btn-lg btn-primary" })
+</div>
